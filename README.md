@@ -16,8 +16,6 @@ My Claude Code mods.
 
 Pick **one** way. Loading the mod twice registers its hooks twice.
 
-While this repository is private, you need read access to it and a GitHub credential on your machine (an SSH key, or `gh auth login` then `gh auth setup-git`).
-
 ### Install from GitHub
 
 At the prompt of a terminal session, then answer `y` and choose a scope:
