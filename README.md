@@ -35,7 +35,7 @@ In the desktop app: click **+** next to the prompt box, then **Plugins**, **Add 
 ### Install from a local clone (to edit it)
 
 ```bash
-git clone git@github.com:andboson/my-claude.git
+git clone https://github.com/andboson/my-claude.git
 ```
 
 ```bash
