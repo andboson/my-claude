@@ -1,0 +1,9 @@
+{
+  "name": "session-mod",
+  "version": "1.0.0",
+  "description": "A docked pane with live session stats: elapsed time, prompts, agents, context fill, cost, tool usage and CPU/memory while Claude works",
+  "author": { "name": "Andrii Bosonchenko" },
+  "license": "MIT",
+  "keywords": ["stats", "pane", "context", "cost", "monitoring"],
+  "types": "./types/index.d.ts"
+}

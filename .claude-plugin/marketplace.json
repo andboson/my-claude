@@ -1,0 +1,6 @@
+{
+  "name": "my-claude",
+  "description": "My Claude Code mods",
+  "owner": { "name": "Andrii Bosonchenko" },
+  "plugins": [{ "name": "session-mod", "source": "./mods/session-mod" }]
+}
