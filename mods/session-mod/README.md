@@ -2,8 +2,7 @@
 
 A docked pane for Claude Code showing live stats for the current session.
 
-<img width="300" height="450" alt="Screenshot from 2026-11-26 11-38-27" src="https://github.com/user-attachments/assets/c78b0940-876e-4540-b5e3-d706a4e02a5a" />
-
+<img width="300" alt="The session stats pane" src="screenshot.png" />
 
 ## What it shows
 
