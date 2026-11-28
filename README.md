@@ -5,12 +5,13 @@ My Claude Code mods and skills.
 | Plugin | What it does |
 | --- | --- |
 | [session-mod](mods/session-mod) | Docked pane with live session stats, the branch's pull request and system load |
-| [andboson](plugins/andboson/skills) | Go conventions, a Go code review, and branches, commits and pull requests |
+| [andboson](plugins/andboson/skills) | Go conventions, a Go code review, comment cleanup, and branches, commits and pull requests |
 
 ## Skills
 
 | Skill | What it does |
 | --- | --- |
+| `/andboson:clean-comments` | Cleans up comments in existing Go code, saving decisions to ADRs and drafting issues. Reports before editing |
 | `/andboson:go-conventions` | Rules for writing and testing Go, matched to the Go version in `go.mod` |
 | `/andboson:go-review` | Reviews a diff, branch or PR in a forked subagent. Takes a base ref or PR number |
 | `/andboson:pr` | Creates branches, commits and pull requests, and writes PR descriptions |
@@ -21,7 +22,7 @@ Needs `git`. PR work needs `gh` signed in; Go work needs the Go toolchain, and `
 claude plugin install andboson --marketplace andboson/my-claude
 ```
 
-`pr` includes adapted work: see its [credits](plugins/andboson/skills/pr/CREDITS.md).
+`pr` includes adapted work: see its [credits](plugins/andboson/skills/pr/CREDITS.md). `clean-comments` was created from a post by Matt Pocock: see its [credits](plugins/andboson/skills/clean-comments/CREDITS.md).
 
 The sections below, up to **Develop**, are about the mod.
 
