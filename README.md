@@ -1,10 +1,29 @@
 # my-claude
 
-My Claude Code mods.
+My Claude Code mods and skills.
 
-| Mod | What it does |
+| Plugin | What it does |
 | --- | --- |
 | [session-mod](mods/session-mod) | Docked pane with live session stats, the branch's pull request and system load |
+| [andboson](plugins/andboson/skills) | Go conventions, a Go code review, and branches, commits and pull requests |
+
+## Skills
+
+| Skill | What it does |
+| --- | --- |
+| `/andboson:go-conventions` | Rules for writing and testing Go, matched to the Go version in `go.mod` |
+| `/andboson:go-review` | Reviews a diff, branch or PR in a forked subagent. Takes a base ref or PR number |
+| `/andboson:pr` | Creates branches, commits and pull requests, and writes PR descriptions |
+
+Needs `git`. PR work needs `gh` signed in; Go work needs the Go toolchain, and `golangci-lint` for the lint step. The review's mutation probe asks for permission to run commands; if denied, it is skipped.
+
+```bash
+claude plugin install andboson --marketplace andboson/my-claude
+```
+
+`pr` includes adapted work: see its [credits](plugins/andboson/skills/pr/CREDITS.md).
+
+The sections below, up to **Develop**, are about the mod.
 
 ## Requirements
 
@@ -84,4 +103,8 @@ claude plugin validate mods/session-mod
 
 ```bash
 claude plugin test mods/session-mod
+```
+
+```bash
+claude plugin validate plugins/andboson
 ```

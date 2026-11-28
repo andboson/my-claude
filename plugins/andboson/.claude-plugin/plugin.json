@@ -1,0 +1,8 @@
+{
+  "name": "andboson",
+  "version": "1.0.0",
+  "description": "Go conventions, a forked Go code review, and a skill for branches, commits and pull requests",
+  "author": { "name": "Andrii Bosonchenko" },
+  "license": "MIT",
+  "keywords": ["go", "golang", "code-review", "pull-request", "conventions"]
+}
