@@ -1,6 +1,9 @@
 {
   "name": "my-claude",
-  "description": "My Claude Code mods",
+  "description": "My Claude Code mods and skills",
   "owner": { "name": "Andrii Bosonchenko" },
-  "plugins": [{ "name": "session-mod", "source": "./mods/session-mod" }]
+  "plugins": [
+    { "name": "session-mod", "source": "./mods/session-mod" },
+    { "name": "andboson", "source": "./plugins/andboson" }
+  ]
 }
